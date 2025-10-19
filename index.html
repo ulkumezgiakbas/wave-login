@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wave Login — Ezgi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg">
+    <div class="flow"></div>
+    <div class="glow"></div>
+    <div class="mesh"></div>
+  </div>
+
+  <main class="shell">
+    <section class="card" aria-label="Login">
+      <header class="head">
+        <div class="badge">EA</div>
+        <h1>Welcome Back</h1>
+        <p class="sub">Sign in to continue</p>
+      </header>
+
+      <form class="form" novalidate>
+        <div class="form-control">
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder=" " />
+          <label for="email">Email</label>
+          <span class="ink"></span>
+        </div>
+
+        <div class="form-control">
+          <input id="password" name="password" type="password" required minlength="6" autocomplete="current-password" placeholder=" " />
+          <label for="password">Password</label>
+          <button class="toggle" type="button" aria-label="Show password">
+            <svg class="eye on" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/>
+            </svg>
+            <svg class="eye off" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7a21.77 21.77 0 0 1 5.06-5.94M9.9 4.24A10.94 10.94 0 0 1 12 5c7 0 11 7 11 7a21.77 21.77 0 0 1-3.06 4.16"/>
+              <path d="M1 1l22 22"/>
+            </svg>
+          </button>
+          <span class="ink"></span>
+        </div>
+
+        <div class="row">
+          <label class="check">
+            <input type="checkbox" id="remember" />
+            <span class="box" aria-hidden="true"></span>
+            <span>Remember me</span>
+          </label>
+          <a class="link" href="#">Forgot password?</a>
+        </div>
+
+        <button class="btn" type="submit">Login</button>
+        <p class="hint">No account? <a class="link" href="#">Register</a></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
